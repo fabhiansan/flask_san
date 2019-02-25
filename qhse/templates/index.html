@@ -8,10 +8,17 @@
 </head>
 <body>
 <h1>NOT HELLO WORLD</h1>
-    <form method=post enctype=multipart/form-data>
+    <!--<form method=post enctype=multipart/form-data>
         <input type=file name=file>
         <input type=submit value=Upload>
+    </form>-->
+    <form id='formlogin' action="{{ url_for('ftplibs')}}" method="POST">
+        <input type="text" value="username" class='username' name='usernames'>
+        <input type='password' value='password' class='password' name='passwords'>
+        <input type="submit" value='Login'>
     </form>
+    
+
 </body>
 </html>
 
